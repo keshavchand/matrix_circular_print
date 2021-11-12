@@ -6,7 +6,8 @@ mkdir build
 pushd build
 :loop
 pwd
-python ../make_matrix.py > ../matrix.c
+cl /Zi /FC /nologo ..\make_matrix.c
+make_matrix.exe > ../matrix.c
 cl /Zi /FC /nologo  ..\main.c
 ::&& payoff.exe
 clear
