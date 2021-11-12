@@ -1,7 +1,8 @@
 #steps to RUN
 linux
 ```bash
-python make_matrix.py
+cc make_matrix.c 
+a.out > matrix.c
 cc main.c
 ```
 
